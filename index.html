@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Accessible English learning presentation for visually impaired students"
+    />
+    <title>Accessible English Learning Presentation</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css" />
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <button
+      id="tts-button"
+      class="tts-button"
+      type="button"
+      aria-label="Read selected text"
+      aria-keyshortcuts="Control+Shift+S"
+      aria-pressed="false"
+    >
+      🔊 Read Selected Text
+    </button>
+
+    <div id="tts-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+    <main id="main-content" class="page-shell" role="main">
+      <div class="reveal" aria-live="polite" aria-atomic="true">
+        <div class="slides" id="slides-container" aria-label="English lesson slides"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo" aria-label="Author and copyright information">
+      <div class="footer-content">
+        <div class="footer-item">
+          <span class="footer-label">Author:</span>
+          <span id="footer-author">Eltayeb Ali Abdalla Mohamed</span>
+        </div>
+
+        <div class="footer-item">
+          <span class="footer-label">Slide:</span>
+          <span id="current-slide-label">1 / 1</span>
+        </div>
+
+        <div class="footer-item">
+          <span class="footer-label">Copyright:</span>
+          <span>© 2026 All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
